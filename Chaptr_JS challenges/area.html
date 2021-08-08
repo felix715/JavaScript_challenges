@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AREA_OF triangle</title>
+  </head>
+  <body>
+    <!-- so here the values are already given...then the tiangle area is calculated on the console. -->
+    <script>
+      //   var base = 10;
+      //   var height = 40;
+      //   var area = (base * height) / 2;
+      //   console.log(area);
+      //  EITHER OF THE CODES WORKS ON THE CONSOLE.
+      var height = 5;
+      var hypo = 6;
+      var base = 7;
+      var S = (height + base + hypo) / 2; //where S is the perimeter of the triangle.
+      var area = Math.sqrt(S * ((S - base) * (S - hypo) * (S - height)));
+      console.log(area);
+    </script>
+  </body>
+</html>

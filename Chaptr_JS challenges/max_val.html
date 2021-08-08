@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>max_val</title>
+  </head>
+  <body>
+    <script>
+      // to find the largest among the three numbers
+      //the code takes the inputs from the user
+      const number1 = parseFloat(prompt("Enter the first number: "));
+      const number2 = parseFloat(prompt("Enter the second number: "));
+      const number3 = parseFloat(prompt("Enter the third number: "));
+      let largest;
+      //checking the condition
+      if (number1 >= number2 && number1 >= number3) {
+        largest = number1;
+      } else if (number2 >= number1 && number2 >= number3) {
+        largest = number2;
+      } else {
+        largest = number3;
+      }
+      //   display the result
+      console.log("The largest number is " + largest);
+    </script>
+  </body>
+</html>

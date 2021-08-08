@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>date</title>
+  </head>
+  <body style="background-color: black">
+    <h1 style="text-align: center; font-weight: bold; color: #fff">
+      CURRENT DATE
+    </h1>
+    <p id="demo" style="font-weight: bold; text-align: center; color: #fff"></p>
+    <p id="time" style="font-weight: bold; text-align: center; color: #fff"></p>
+    <script>
+      var today = new Date();
+      var date =
+        today.getDate() + //displays the numerical day of the month
+        "-" +
+        (today.getMonth() + 1) + //displays the numerical month where  the +1 converts the month from digit(0-11) to normal
+        "-" +
+        today.getFullYear(); //uses today variable to display the 4 digit year
+
+      document.getElementById("demo").innerHTML = date;
+      var time =
+        today.getHours() + //uses today variable to display the current hour
+        ":" +
+        today.getMinutes() + //displays the current minute reading
+        ":" +
+        today.getSeconds() + //displays the current seconds reading
+        ":" +
+        today.getMilliseconds(); //displays the current milliseconds reading
+      document.getElementById("time").innerHTML = time;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>maximum value</title>
+  </head>
+  <body>
+    <!-- the following JS function will dispaly only the largest numbers only where the numbers are given -->
+    <script>
+      function max_of_three_values(x, y, z) {
+        max_value = 0;
+        if (x > y) {
+          max_value = x;
+        } else {
+          max_value = y;
+        }
+        if (z > max_value) {
+          max_value = z;
+        }
+        return max_value;
+      }
+      console.log(max_of_three_values(10, 40, 70));
+      console.log(max_of_three_values(1280, 40357, 702));
+      console.log(max_of_three_values(1024, 4430, 7110));
+      console.log(max_of_three_values(132, 443, 430));
+      console.log(max_of_three_values(15, 420, 7340));
+      console.log(max_of_three_values(12, 50, 7));
+    </script>
+  </body>
+</html>
